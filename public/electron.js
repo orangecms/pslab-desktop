@@ -149,3 +149,7 @@ ipcMain.on('FETCH_LA', (event, args) => {
 ipcMain.on('SENSORS_SCAN', (event, args) => {
   mainWindow.webContents.send('SENSORS_SCAN', args);
 });
+
+ipcMain.on('SENSORS_READ', (event, args) => {
+  mainWindow.webContents.send('SENSORS_READ', args);
+});
