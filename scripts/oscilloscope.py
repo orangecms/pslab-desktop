@@ -29,6 +29,7 @@ class Oscilloscope:
         self.mic = False
         self.ch1_map = 'CH1'
         self.ch2_map = 'CH2'
+        # FIXME: Does this work even?
         self.mic_map = 'Inbuilt'
         self.trigger_voltage = 0
         self.trigger_channel = 'CH1'
