@@ -65,6 +65,7 @@
     "start": "concurrently 'npm run react-start' 'wait-on http://localhost:3000/ && npm run electron-start'",
     "react-build": "react-scripts build",
     "pack": "electron-builder --dir -c.extraMetadata.main=build/electron.js",
+    "tarxz": "electron-builder --dir -c.extraMetadata.main=build/electron.js --linux tar.xz",
     "electron-build-linux": "electron-builder --linux -c.extraMetadata.main=build/electron.js",
     "electron-build-windows": "electron-builder --win -c.extraMetadata.main=build/electron.js",
     "electron-build-mac": "electron-builder --mac -c.extraMetadata.main=build/electron.js",
